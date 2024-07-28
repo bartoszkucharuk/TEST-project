@@ -99,10 +99,14 @@ a {
     color: inherit;
 }
 
-
+.modal-btn-open {
+    width: 500px;
+    height: 300px;
+}
 /* MODAL AREA */
 .backdrop {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -115,6 +119,7 @@ a {
 
 .modal-window {
     display: flex;
+    z-index: 2;
     flex-direction:column;
     position: absolute;
     top: 50%;
@@ -155,13 +160,19 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid transparent;
+    width: 24px;
+    height: 24px;
+    border: 1px solid red;
     top: 20px;
     right: 16px;
     padding:6.75px;
     background-color: inherit;
     cursor: pointer;
     transition: background-color 250ms ease-in-out;
+}
+.modal-btn-close:hover {
+    background-color: yellow;
+    color: green;
 }
 
 /* @MEDIA TABLET */
